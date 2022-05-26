@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <script src="registration_validation.js" defer="true"></script>
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registrazione</h2>
+    <form method="POST">
+      <div class="input-box">
+        <input type="text" placeholder="Inserisci il tuo username" id="username" name="username" required>
+        <div id="usruse"></div>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Inserisci la tua email" id="email" name="email" required>
+        <div id="emailuse"></div>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Inserisci password" id="psw" name="psw" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Conferma password" id="cpsw" name="cpsw" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox" required>
+        <h3>Accetto tutti i termini & condizioni</h3>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Registrati" name="btn-save">
+      </div>
+      <div class="text">
+        <h3>Possiedi già un account? <a href="index.html">Accedi adesso</a></h3>
+      </div>
+    </form>
+    <div id="error"></div>
+  </div>
+</body>
+</html>

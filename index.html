@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>WebShop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="script.js" defer="true"></script>
+</head>
+
+<body>
+  <div class="hidden overlay">
+  </div>
+  <header>
+    <div class="nav-bar">
+      <div class="logo">
+        <a href="index.html">WebShop</a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a class="home" href="#" class="active">Home<span>.</span></a></li>
+          <li><a class="negozio">Negozio</a></li>
+          <li><a class="carrello">Carrello</a></li>
+          <li><a class="accedi">Accedi</a></li>
+        </ul>
+      </div>
+      <div id="mobile-container">
+        <div id="mobile-menu">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <div id="links-mobile">
+      <a class="home" href="#" class="active">Home<i class="fa fa-home" aria-hidden="true"></i></a>
+      <a class="negozio" href="#">Negozio<i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+      <a class="carrello" href="#">Carrello<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+      <a class="accedi">Accedi<i class="fa fa-user" aria-hidden="true"></i></a>
+    </div>
+    <div class="hero">
+      <div class="row">
+        <div class="left-sec">
+          <div class="content">
+            <h2><span>BENVENUTO</span><br>Utente</h2>
+            <p>È brutto chiamarti in questo modo, ma purtroppo non so chi sei. Effettua l'accesso per farti riconoscere e per poter sbloccare tutte le funzionalità del sito.</p>
+          </div>
+          <button class="accedi-btn">
+            <a href="#">Accedi</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+          </button>
+        </div>
+        <div class="right-sec">
+          <h1>Alcuni dei nostri migliori Brand</h1>
+          <div class="image-grid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="login-popup" id="Login">
+    <form action="accedi.php" method="POST" class="form-container">
+      <button type="button" class="btn cancel">X</button>
+      <h1>Accedi</h1>
+  
+      <label for="username"><b>Nome utente</b></label>
+      <input type="text" placeholder="Inserisci nome utente" name="username" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Inserisci password" name="psw" required>
+      <p>Non sei ancora registrato?</p><a href="registration.html">Registrati adesso!</a>
+  
+      <button type="submit" id="invia" class="btn">Login</button>
+    </form>
+  </div>
+  <footer>
+    <div class="testo-footer">
+      <p>STEFANO SANNINO 1000002144 HW1</p>
+    </div>
+    <div class="social-media">
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</script>
+</body>
+</html>
